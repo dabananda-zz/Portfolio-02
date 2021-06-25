@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* --------------- Header --------------- */
+header {
+    width: 100%;
+    min-height: 100vh;
+}
+.cover {
+    background-color: gold;
+    height: 10rem;
+}
+.box {
+    text-align: center;
+    margin-top: -6.5rem;
+    position: relative;
+}
+.box > img {
+    width: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 5px solid gold;
+}
+.name {
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+.strings {
+    color: gold;
+}
+.btn-box {
+    margin: 5rem 0 3rem;
+}
+.icon-box {
+    margin-bottom: 3rem;
+}
+.social-icon {
+    margin: 0 5px;
+    font-size: 20px;
+    color: #000;
+}
+/* --------------- Experience --------------- */
+#experience {
+    background-color: #000;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+.experience-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem;
+}
+.experience-1 section {
+    border: 3px solid gold;
+    border-radius: 5px;
+    padding: 1rem 0.5rem;
+    transition: all 0.5s ease;
+}
+.experience-1 section:hover {
+    background: gold;
+    color: #000;
+    padding: 0 0.7rem;
+    cursor: pointer;
+}
+.experience-1 section h1 {
+    color: gold;
+    margin: 1rem 0 0.5rem 0;
+}
+.experience-1 section:hover > h1 {
+    color: #000;
+}
+.experience-1 i {
+    font-size: 50px;
+    color: gold;
+}
+.experience-1 section:hover > i {
+    color: #000;
+}
+/* --------------- Works --------------- */
+#works {
+    background: gold;
+}
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    text-align: center;
+    /* border: 2px solid #000; */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease;
+}
+.work:hover {
+    box-shadow: 0 0 20px black;
+}
+.work-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.work-info h1 {
+    font-size: 30px;
+}
+.work-image img {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+/* --------------- Work With Me --------------- */
+#wwm {
+    background-color: #000;
+}
+.n-e {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+}
+.input-area {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border: transparent;
+    outline: none;
+    border-radius: 5px;
+}
+.textarea {
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+}
+.submit-btn {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    background: gold;
+    border: 2px solid gold;
+    border-radius: 30px;
+    padding: 0.7rem 3rem;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+.submit-btn:hover {
+    padding: 0.7rem 4rem;
+}
+.send-btn {
+    font-size: 20px;
+}
+.send-btn:hover {
+    color: inherit;
+}
+/* --------------- Footer --------------- */
+footer {
+    background-color: gold;
+    padding: 3rem 0;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+}
