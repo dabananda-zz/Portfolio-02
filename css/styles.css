@@ -36,10 +36,10 @@ header {
     color: gold;
 }
 .btn-box {
-    margin: 5rem 0 3rem;
+    margin: 5rem 0 3rem 0;
 }
 .icon-box {
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 .social-icon {
     margin: 0 5px;
@@ -62,13 +62,13 @@ header {
     border: 3px solid gold;
     border-radius: 5px;
     padding: 1rem 0.5rem;
-    transition: all 0.5s ease;
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
 .experience-1 section:hover {
     background: gold;
     color: #000;
-    padding: 0 0.7rem;
-    cursor: pointer;
+    transform: scale(1.05);
 }
 .experience-1 section h1 {
     color: gold;
@@ -93,12 +93,14 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5rem;
     text-align: center;
-    /* border: 2px solid #000; */
     margin-top: 3rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease;
 }
-.work:hover {
+.work-animation {
+    transition: all 0.5s ease;
+}
+.work-animation:hover {
     box-shadow: 0 0 20px black;
 }
 .work-info {
@@ -109,6 +111,15 @@ header {
 }
 .work-info h1 {
     font-size: 30px;
+}
+.work-info p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.work-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .work-image img {
     display: block;
@@ -149,7 +160,7 @@ header {
     cursor: pointer;
     display: block;
     margin: auto;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .submit-btn:hover {
     padding: 0.7rem 4rem;
